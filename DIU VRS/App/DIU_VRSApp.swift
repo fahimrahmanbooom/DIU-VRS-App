@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct DIU_VRSApp: App {
+    
+    @AppStorage("adminLoggedIn") var adminLoggedIn: Bool = false
+    @AppStorage("userLoggedIn") var userLoggedIn: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if !adminLoggedIn && !userLoggedIn {
+                LoginView()
+            }
+            else if adminLoggedIn {
+                // admin's tab view
+            }
+            else if userLoggedIn {
+                // user's tab view
+            }
         }
     }
 }

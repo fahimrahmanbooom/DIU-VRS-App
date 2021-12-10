@@ -7,16 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0F73DB276322590072D292 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73DA276322590072D292 /* LoginView.swift */; };
+		FF0F73E0276323200072D292 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73DF276323200072D292 /* AppColor.swift */; };
+		FF0F73E22763238F0072D292 /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73E12763238F0072D292 /* TopLogoView.swift */; };
+		FF0F73E5276328050072D292 /* LoginRegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73E4276328050072D292 /* LoginRegisterButtonView.swift */; };
+		FF0F73E8276328610072D292 /* LoginTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73E7276328610072D292 /* LoginTextView.swift */; };
+		FF0F73EA276329130072D292 /* LoginCredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73E9276329130072D292 /* LoginCredentialsView.swift */; };
+		FF0F73ED2763298D0072D292 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73EC2763298D0072D292 /* LoginCredentials.swift */; };
+		FF0F73EF27632C100072D292 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73EE27632C100072D292 /* RegistrationView.swift */; };
+		FF0F73F127632E280072D292 /* RegistrationCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73F027632E280072D292 /* RegistrationCredentials.swift */; };
+		FF0F73F327632EB80072D292 /* RegistrationCredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73F227632EB80072D292 /* RegistrationCredentialsView.swift */; };
+		FF0F73F5276337320072D292 /* RegistrationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73F4276337320072D292 /* RegistrationTextView.swift */; };
+		FF0F73F827633C5B0072D292 /* RegistrationButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73F727633C5B0072D292 /* RegistrationButtonView.swift */; };
+		FF0F73FF276344900072D292 /* UserStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F73FE276344900072D292 /* UserStatusView.swift */; };
+		FF0F7401276344A90072D292 /* UserReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7400276344A90072D292 /* UserReserveView.swift */; };
+		FF0F7403276344B70072D292 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7402276344B70072D292 /* UserProfileView.swift */; };
+		FF0F7405276344CD0072D292 /* UserTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7404276344CD0072D292 /* UserTabView.swift */; };
+		FF0F74072763450D0072D292 /* AdminTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74062763450D0072D292 /* AdminTabView.swift */; };
+		FF0F7409276345210072D292 /* AdminLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7408276345210072D292 /* AdminLogView.swift */; };
+		FF0F740B2763452F0072D292 /* AdminCreateVenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F740A2763452F0072D292 /* AdminCreateVenueView.swift */; };
+		FF0F740D276345430072D292 /* AdminReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F740C276345430072D292 /* AdminReserveView.swift */; };
+		FF0F740F276345550072D292 /* AdminProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F740E276345550072D292 /* AdminProfileView.swift */; };
+		FF0F7411276348210072D292 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7410276348210072D292 /* API.swift */; };
+		FF0F7413276348750072D292 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7412276348750072D292 /* URLs.swift */; };
+		FF0F7415276351290072D292 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7414276351290072D292 /* LoginResponseModel.swift */; };
+		FF0F74172763A4010072D292 /* RegistrationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74162763A4010072D292 /* RegistrationResponseModel.swift */; };
 		FF5BC96427625CE6004B1FAC /* DIU_VRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC96327625CE6004B1FAC /* DIU_VRSApp.swift */; };
-		FF5BC96627625CE6004B1FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC96527625CE6004B1FAC /* ContentView.swift */; };
 		FF5BC96827625CE9004B1FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC96727625CE9004B1FAC /* Assets.xcassets */; };
 		FF5BC96B27625CE9004B1FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC96A27625CE9004B1FAC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF0F73DA276322590072D292 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FF0F73DF276323200072D292 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		FF0F73E12763238F0072D292 /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
+		FF0F73E4276328050072D292 /* LoginRegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterButtonView.swift; sourceTree = "<group>"; };
+		FF0F73E7276328610072D292 /* LoginTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextView.swift; sourceTree = "<group>"; };
+		FF0F73E9276329130072D292 /* LoginCredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentialsView.swift; sourceTree = "<group>"; };
+		FF0F73EC2763298D0072D292 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		FF0F73EE27632C100072D292 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FF0F73F027632E280072D292 /* RegistrationCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCredentials.swift; sourceTree = "<group>"; };
+		FF0F73F227632EB80072D292 /* RegistrationCredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCredentialsView.swift; sourceTree = "<group>"; };
+		FF0F73F4276337320072D292 /* RegistrationTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTextView.swift; sourceTree = "<group>"; };
+		FF0F73F6276339390072D292 /* DIU-VRS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DIU-VRS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FF0F73F727633C5B0072D292 /* RegistrationButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationButtonView.swift; sourceTree = "<group>"; };
+		FF0F73FE276344900072D292 /* UserStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusView.swift; sourceTree = "<group>"; };
+		FF0F7400276344A90072D292 /* UserReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReserveView.swift; sourceTree = "<group>"; };
+		FF0F7402276344B70072D292 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		FF0F7404276344CD0072D292 /* UserTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabView.swift; sourceTree = "<group>"; };
+		FF0F74062763450D0072D292 /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabView.swift; sourceTree = "<group>"; };
+		FF0F7408276345210072D292 /* AdminLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLogView.swift; sourceTree = "<group>"; };
+		FF0F740A2763452F0072D292 /* AdminCreateVenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCreateVenueView.swift; sourceTree = "<group>"; };
+		FF0F740C276345430072D292 /* AdminReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminReserveView.swift; sourceTree = "<group>"; };
+		FF0F740E276345550072D292 /* AdminProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileView.swift; sourceTree = "<group>"; };
+		FF0F7410276348210072D292 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FF0F7412276348750072D292 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		FF0F7414276351290072D292 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		FF0F74162763A4010072D292 /* RegistrationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResponseModel.swift; sourceTree = "<group>"; };
 		FF5BC96027625CE6004B1FAC /* DIU VRS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIU VRS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5BC96327625CE6004B1FAC /* DIU_VRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIU_VRSApp.swift; sourceTree = "<group>"; };
-		FF5BC96527625CE6004B1FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF5BC96727625CE9004B1FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5BC96A27625CE9004B1FAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +81,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF0F73D8276322100072D292 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F73DA276322590072D292 /* LoginView.swift */,
+				FF0F73E12763238F0072D292 /* TopLogoView.swift */,
+				FF0F73E7276328610072D292 /* LoginTextView.swift */,
+				FF0F73E9276329130072D292 /* LoginCredentialsView.swift */,
+				FF0F73E4276328050072D292 /* LoginRegisterButtonView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FF0F73D92763221B0072D292 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F73EE27632C100072D292 /* RegistrationView.swift */,
+				FF0F73F4276337320072D292 /* RegistrationTextView.swift */,
+				FF0F73F227632EB80072D292 /* RegistrationCredentialsView.swift */,
+				FF0F73F727633C5B0072D292 /* RegistrationButtonView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		FF0F73DC276322C90072D292 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F73DF276323200072D292 /* AppColor.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FF0F73DD276322D00072D292 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F7410276348210072D292 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FF0F73DE276322D60072D292 /* URLs */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F7412276348750072D292 /* URLs.swift */,
+			);
+			path = URLs;
+			sourceTree = "<group>";
+		};
+		FF0F73EB2763295C0072D292 /* ObservableObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F73EC2763298D0072D292 /* LoginCredentials.swift */,
+				FF0F73F027632E280072D292 /* RegistrationCredentials.swift */,
+			);
+			path = ObservableObjects;
+			sourceTree = "<group>";
+		};
+		FF0F73F9276343B00072D292 /* UserTabView */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F7404276344CD0072D292 /* UserTabView.swift */,
+				FF0F73FB276344000072D292 /* UserTabs */,
+			);
+			path = UserTabView;
+			sourceTree = "<group>";
+		};
+		FF0F73FA276343C50072D292 /* AdminTabView */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F74062763450D0072D292 /* AdminTabView.swift */,
+				FF0F73FC2763440C0072D292 /* AdminTabs */,
+			);
+			path = AdminTabView;
+			sourceTree = "<group>";
+		};
+		FF0F73FB276344000072D292 /* UserTabs */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F73FE276344900072D292 /* UserStatusView.swift */,
+				FF0F7400276344A90072D292 /* UserReserveView.swift */,
+				FF0F7402276344B70072D292 /* UserProfileView.swift */,
+			);
+			path = UserTabs;
+			sourceTree = "<group>";
+		};
+		FF0F73FC2763440C0072D292 /* AdminTabs */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F7408276345210072D292 /* AdminLogView.swift */,
+				FF0F740A2763452F0072D292 /* AdminCreateVenueView.swift */,
+				FF0F740C276345430072D292 /* AdminReserveView.swift */,
+				FF0F740E276345550072D292 /* AdminProfileView.swift */,
+			);
+			path = AdminTabs;
+			sourceTree = "<group>";
+		};
 		FF5BC95727625CE6004B1FAC = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +195,14 @@
 		FF5BC96227625CE6004B1FAC /* DIU VRS */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F73F6276339390072D292 /* DIU-VRS-Info.plist */,
 				FF5BC97127625D90004B1FAC /* App */,
-				FF5BC97327625D9D004B1FAC /* Models */,
 				FF5BC97227625D95004B1FAC /* Views */,
+				FF5BC97327625D9D004B1FAC /* Models */,
+				FF0F73DD276322D00072D292 /* Networking */,
+				FF0F73EB2763295C0072D292 /* ObservableObjects */,
+				FF0F73DC276322C90072D292 /* Helper */,
+				FF0F73DE276322D60072D292 /* URLs */,
 				FF5BC96727625CE9004B1FAC /* Assets.xcassets */,
 				FF5BC96927625CE9004B1FAC /* Preview Content */,
 			);
@@ -72,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				FF5BC96327625CE6004B1FAC /* DIU_VRSApp.swift */,
-				FF5BC96527625CE6004B1FAC /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -80,6 +228,10 @@
 		FF5BC97227625D95004B1FAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F73D8276322100072D292 /* Login */,
+				FF0F73D92763221B0072D292 /* Registration */,
+				FF0F73F9276343B00072D292 /* UserTabView */,
+				FF0F73FA276343C50072D292 /* AdminTabView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +239,8 @@
 		FF5BC97327625D9D004B1FAC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FF0F7414276351290072D292 /* LoginResponseModel.swift */,
+				FF0F74162763A4010072D292 /* RegistrationResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,8 +315,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5BC96627625CE6004B1FAC /* ContentView.swift in Sources */,
+				FF0F7415276351290072D292 /* LoginResponseModel.swift in Sources */,
+				FF0F740B2763452F0072D292 /* AdminCreateVenueView.swift in Sources */,
+				FF0F73ED2763298D0072D292 /* LoginCredentials.swift in Sources */,
+				FF0F740F276345550072D292 /* AdminProfileView.swift in Sources */,
+				FF0F740D276345430072D292 /* AdminReserveView.swift in Sources */,
+				FF0F73E8276328610072D292 /* LoginTextView.swift in Sources */,
+				FF0F73E5276328050072D292 /* LoginRegisterButtonView.swift in Sources */,
+				FF0F7409276345210072D292 /* AdminLogView.swift in Sources */,
+				FF0F73EF27632C100072D292 /* RegistrationView.swift in Sources */,
+				FF0F73EA276329130072D292 /* LoginCredentialsView.swift in Sources */,
+				FF0F7401276344A90072D292 /* UserReserveView.swift in Sources */,
+				FF0F73FF276344900072D292 /* UserStatusView.swift in Sources */,
+				FF0F7405276344CD0072D292 /* UserTabView.swift in Sources */,
+				FF0F74172763A4010072D292 /* RegistrationResponseModel.swift in Sources */,
+				FF0F73F827633C5B0072D292 /* RegistrationButtonView.swift in Sources */,
+				FF0F73F127632E280072D292 /* RegistrationCredentials.swift in Sources */,
+				FF0F73E0276323200072D292 /* AppColor.swift in Sources */,
+				FF0F7411276348210072D292 /* API.swift in Sources */,
+				FF0F73F327632EB80072D292 /* RegistrationCredentialsView.swift in Sources */,
+				FF0F7403276344B70072D292 /* UserProfileView.swift in Sources */,
+				FF0F73F5276337320072D292 /* RegistrationTextView.swift in Sources */,
+				FF0F7413276348750072D292 /* URLs.swift in Sources */,
+				FF0F73DB276322590072D292 /* LoginView.swift in Sources */,
 				FF5BC96427625CE6004B1FAC /* DIU_VRSApp.swift in Sources */,
+				FF0F74072763450D0072D292 /* AdminTabView.swift in Sources */,
+				FF0F73E22763238F0072D292 /* TopLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +474,12 @@
 				DEVELOPMENT_TEAM = 4JWUSF25X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DIU-VRS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,11 +504,12 @@
 				DEVELOPMENT_TEAM = 4JWUSF25X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DIU-VRS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

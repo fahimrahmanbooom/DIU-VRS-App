@@ -1,18 +1,18 @@
 //
-//  RegistrationButtonView.swift
+//  CreateVenueButtonView.swift
 //  DIU VRS
 //
-//  Created by Fahim Rahman on 12/10/21.
+//  Created by Fahim Rahman on 12/11/21.
 //
 
 import SwiftUI
 
-// MARK: - Registration Register Button View
-struct RegistrationButtonView: View {
+// MARK: - Create Venue Button View
+struct CreateVenueButtonView: View {
     
     // MARK: - Properties
-    @State private var registerationResponseModel = RegistrationResponseModel()
-    @ObservedObject var registrationCredentials: RegistrationCredentials
+    @State private var createVenueResponseModel = CreateVenueResponseModel()
+    @ObservedObject var createVenueCredentials: CreateVenueCredentials
     @State private var showAlert = false
     @State private var errorMessage = String()
     
@@ -25,35 +25,32 @@ struct RegistrationButtonView: View {
                 // button
                 Button {
                     // registation action
-                    Networking.registrationRequest(url: URL.registerURL, expecting: RegistrationResponseModel.self, name: self.registrationCredentials.name, email: self.registrationCredentials.email, phone: self.registrationCredentials.phone, password: self.registrationCredentials.password, completion: { result in
+                    Networking.createVenueRequest(url: URL.createVenueURL, expecting: CreateVenueResponseModel.self, rentAmount: self.createVenueCredentials.rentAmount, seatingCapacity: self.createVenueCredentials.seatingCapacity, venueInfo: self.createVenueCredentials.venueInfo, venueLocation: self.createVenueCredentials.venueLocation, venueName: self.createVenueCredentials.venueName) { result in
+                        
                         do {
-                            try self.registerationResponseModel = result.get()
+                            try self.createVenueResponseModel = result.get()
                             
                             DispatchQueue.main.async {
-                                if self.registerationResponseModel.status! >= 200 && self.registerationResponseModel.status! <= 299 {
-                                    
-                                    UserDefaults.standard.set(self.registrationCredentials.name, forKey: "name")
-                                    UserDefaults.standard.set(self.registrationCredentials.phone, forKey: "phone")
-                                    
-                                    self.errorMessage = self.registerationResponseModel.message ?? ""
+                                if self.createVenueResponseModel.status! >= 200 && self.createVenueResponseModel.status! <= 299 {
+                                    self.errorMessage = self.createVenueResponseModel.message ?? ""
                                     self.showAlert = true
                                 }
                                 else {
-                                    self.errorMessage = self.registerationResponseModel.message ?? ""
+                                    self.errorMessage = self.createVenueResponseModel.message ?? ""
                                     self.showAlert = true
                                 }
                             }
                         } catch {
                             print(error)
                         }
-                    })
+                    }
                 } label: {
                     // hstack
                     HStack {
                         
                         Spacer()
                         
-                        Text("Register")
+                        Text("Create")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -75,9 +72,9 @@ struct RegistrationButtonView: View {
 }
 
 
-struct RegistrationButtonView_Previews: PreviewProvider {
+struct CreateVenueButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationButtonView(registrationCredentials: .init())
+        CreateVenueButtonView(createVenueCredentials: .init())
             .previewLayout(.sizeThatFits)
     }
 }

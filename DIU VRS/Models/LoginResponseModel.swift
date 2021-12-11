@@ -7,7 +7,15 @@
 
 import Foundation
 
-// LoginResponseModel
+// MARK: - LoginResponseModel
 struct LoginResponseModel: Codable {
-    let email, password: String // will change
+    var status: Int?
+    var message: String?
+    var data: LoginData?
+}
+
+// MARK: - DataClass
+struct LoginData: Codable {
+    var token, type: String?
+    var admin: Bool?
 }

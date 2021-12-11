@@ -7,7 +7,8 @@
 
 import Foundation
 
+// MARK: - Registration Response Model
 struct RegistrationResponseModel: Codable {
       var message: String?
-      var statusCode: Int?
+      var status: Int?
 }

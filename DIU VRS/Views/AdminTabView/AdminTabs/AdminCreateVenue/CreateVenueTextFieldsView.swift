@@ -1,25 +1,25 @@
 //
-//  RegistrationCredentialsView.swift
+//  CreateVenueTextFieldsView.swift
 //  DIU VRS
 //
-//  Created by Fahim Rahman on 12/10/21.
+//  Created by Fahim Rahman on 12/11/21.
 //
 
 import SwiftUI
 
 // MARK: - Enum Field
 private enum Field: Hashable {
-    case name, email, phone, password
+    case rentAmount, seatingCapacity, venueInfo, venueLocation, venueName
 }
 
 
-// MARK: - Registration Credential View
-struct RegistrationCredentialsView: View {
+// MARK: - Create Venue TextFields View
+struct CreateVenueTextFieldsView: View {
     
     // MARK: Properties
     @FocusState private var focusedField: Field?
     
-    @ObservedObject var registrationCredentials: RegistrationCredentials
+    @ObservedObject var createVenueCredentials: CreateVenueCredentials
     
     // body
     var body: some View {
@@ -36,64 +36,83 @@ struct RegistrationCredentialsView: View {
                         .frame(width: 25, height: 25)
                     
                     // text input field
-                    TextField("Name", text: $registrationCredentials.name)
+                    TextField("Venue Name", text: $createVenueCredentials.venueName)
+                        .padding([.top, .bottom, .trailing], 20)
+                        .padding(.leading, 10)
+                        .keyboardType(.default)
+                        .focused($focusedField, equals: .venueName)
+                    
+                } //: hstack
+                .padding(.top, 0)
+                
+                // hstack
+                HStack {
+                    // icon
+                    Image(systemName: "location.circle")
+                        .resizable()
+                        .foregroundColor(.customGreen)
+                        .frame(width: 25, height: 25)
+                    
+                    // text input field
+                    TextField("Venue Location", text: $createVenueCredentials.venueLocation)
+                        .padding([.top, .bottom, .trailing], 20)
+                        .padding(.leading, 10)
+                        .keyboardType(.default)
+                        .focused($focusedField, equals: .venueLocation)
+                    
+                } //: hstack
+                .padding(.top, 0)
+                
+                // hstack
+                HStack {
+                    // icon
+                    Image(systemName: "info.circle.fill")
+                        .resizable()
+                        .foregroundColor(.customGreen)
+                        .frame(width: 25, height: 25)
+                    
+                    // text input field
+                    TextField("Venue Info", text: $createVenueCredentials.venueInfo)
+                        .padding([.top, .bottom, .trailing], 20)
+                        .padding(.leading, 10)
+                        .keyboardType(.default)
+                        .focused($focusedField, equals: .venueInfo)
+                    
+                } //: hstack
+                .padding(.top, 0)
+                
+                // hstack
+                HStack {
+                    // icon
+                    Image(systemName: "square.grid.3x3.square")
+                        .resizable()
+                        .foregroundColor(.customGreen)
+                        .frame(width: 25, height: 25)
+                    
+                    // text input field
+                    TextField("Seating Capacity", text: $createVenueCredentials.seatingCapacity)
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 10)
                         .keyboardType(.namePhonePad)
-                        .focused($focusedField, equals: .name)
-                    
+                        .focused($focusedField, equals: .seatingCapacity)
+                        
                 } //: hstack
-                .padding(.top, 0)
+                .padding(.bottom, 0)
                 
                 // hstack
                 HStack {
                     // icon
-                    Image(systemName: "phone.fill")
+                    Image(systemName: "coloncurrencysign.circle.fill")
                         .resizable()
                         .foregroundColor(.customGreen)
                         .frame(width: 25, height: 25)
                     
                     // text input field
-                    TextField("Phone", text: $registrationCredentials.phone)
+                    TextField("Rent Amount", text: $createVenueCredentials.rentAmount)
                         .padding([.top, .bottom, .trailing], 20)
                         .padding(.leading, 10)
-                        .keyboardType(.phonePad)
-                        .focused($focusedField, equals: .phone)
-                    
-                } //: hstack
-                .padding(.top, 0)
-                
-                // hstack
-                HStack {
-                    // icon
-                    Image(systemName: "person.fill")
-                        .resizable()
-                        .foregroundColor(.customGreen)
-                        .frame(width: 25, height: 25)
-                    
-                    // text input field
-                    TextField("Email", text: $registrationCredentials.email)
-                        .padding([.top, .bottom, .trailing], 20)
-                        .padding(.leading, 10)
-                        .keyboardType(.emailAddress)
-                        .focused($focusedField, equals: .email)
-                    
-                } //: hstack
-                .padding(.top, 0)
-                
-                // hstack
-                HStack {
-                    // icon
-                    Image(systemName: "lock.fill")
-                        .resizable()
-                        .foregroundColor(.customGreen)
-                        .frame(width: 20, height: 26)
-                    
-                    // text input field
-                    SecureField("Password", text: $registrationCredentials.password)
-                        .padding([.top, .bottom, .trailing], 20)
-                        .padding(.leading, 15)
-                        .focused($focusedField, equals: .password)
+                        .keyboardType(.namePhonePad)
+                        .focused($focusedField, equals: .rentAmount)
                         
                 } //: hstack
                 .padding(.bottom, 0)
@@ -101,7 +120,7 @@ struct RegistrationCredentialsView: View {
             } //: vstack
             .task  {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    self.focusedField = .name
+                    self.focusedField = .venueName
                 } //: DispatchQueue
             } //: task
         } //: group box
@@ -112,9 +131,10 @@ struct RegistrationCredentialsView: View {
 
 
 // MARK: Preview
-struct RegistrationCredentialView_Previews: PreviewProvider {
+struct CreateVenueTextFieldsView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationCredentialsView(registrationCredentials: .init())
+        CreateVenueTextFieldsView(createVenueCredentials: .init())
             .previewLayout(.sizeThatFits)
     }
 }
+

@@ -9,13 +9,16 @@ import SwiftUI
 
 // MARK: - Admin Tab View
 struct AdminTabView: View {
+    
+    // MARK: - Properties
+    
     // body
     var body: some View {
         // tab view
         TabView {
             AdminLogView()
                 .tabItem { Label("Log", systemImage: "text.redaction") }
-            AdminCreateVenueView()
+            AdminCreateVenueView(createVenueCredentials: .init())
                 .tabItem { Label("Create Venue", systemImage: "calendar.badge.plus") }
             AdminReserveView()
                 .tabItem { Label("Reserve", systemImage: "pin.fill") }

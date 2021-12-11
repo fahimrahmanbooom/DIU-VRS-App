@@ -1,20 +1,23 @@
 //
-//  RegistrationButtonView.swift
+//  ReserveVenueButtonView.swift
 //  DIU VRS
 //
-//  Created by Fahim Rahman on 12/10/21.
+//  Created by Fahim Rahman on 12/11/21.
 //
 
 import SwiftUI
 
-// MARK: - Registration Register Button View
-struct RegistrationButtonView: View {
+// MARK: - Reserve Venue Button View
+struct ReserveVenueButtonView: View {
     
     // MARK: - Properties
-    @State private var registerationResponseModel = RegistrationResponseModel()
-    @ObservedObject var registrationCredentials: RegistrationCredentials
+    @State private var reserveVenueResponseModel = CreateVenueResponseModel()
+    @ObservedObject var reserveVenueCredentials: ReserveVenueCredentials
     @State private var showAlert = false
     @State private var errorMessage = String()
+    @Binding var date: Int
+    @Binding var month: Int
+    @Binding var venueId: Int
     
     // body
     var body: some View {
@@ -25,35 +28,36 @@ struct RegistrationButtonView: View {
                 // button
                 Button {
                     // registation action
-                    Networking.registrationRequest(url: URL.registerURL, expecting: RegistrationResponseModel.self, name: self.registrationCredentials.name, email: self.registrationCredentials.email, phone: self.registrationCredentials.phone, password: self.registrationCredentials.password, completion: { result in
+                    
+                    Networking.reserveVenueRequest(url: URL.postReservationURL, expecting: CreateVenueResponseModel.self, token: UserDefaults.standard.string(forKey: "token"), name: reserveVenueCredentials.name, phone: reserveVenueCredentials.phone, date: date, month: month, venueId: venueId) { result in
+                        
                         do {
-                            try self.registerationResponseModel = result.get()
+                            try self.reserveVenueResponseModel = result.get()
                             
                             DispatchQueue.main.async {
-                                if self.registerationResponseModel.status! >= 200 && self.registerationResponseModel.status! <= 299 {
-                                    
-                                    UserDefaults.standard.set(self.registrationCredentials.name, forKey: "name")
-                                    UserDefaults.standard.set(self.registrationCredentials.phone, forKey: "phone")
-                                    
-                                    self.errorMessage = self.registerationResponseModel.message ?? ""
+                                if self.reserveVenueResponseModel.status! >= 200 && self.reserveVenueResponseModel.status! <= 299 {
+                                    self.errorMessage = self.reserveVenueResponseModel.message ?? ""
                                     self.showAlert = true
                                 }
                                 else {
-                                    self.errorMessage = self.registerationResponseModel.message ?? ""
+                                    self.errorMessage = self.reserveVenueResponseModel.message ?? ""
                                     self.showAlert = true
                                 }
                             }
                         } catch {
                             print(error)
                         }
-                    })
+                        
+                    }
+                    
+
                 } label: {
                     // hstack
                     HStack {
                         
                         Spacer()
                         
-                        Text("Register")
+                        Text("Reserve")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -75,9 +79,9 @@ struct RegistrationButtonView: View {
 }
 
 
-struct RegistrationButtonView_Previews: PreviewProvider {
+struct ReserveVenueButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationButtonView(registrationCredentials: .init())
+        ReserveVenueButtonView(reserveVenueCredentials: .init(), date: .constant(0), month: .constant(0), venueId: .constant(0))
             .previewLayout(.sizeThatFits)
     }
 }

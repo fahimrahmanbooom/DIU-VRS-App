@@ -14,7 +14,11 @@ struct LoginRegisterButtonView: View {
     @AppStorage("adminLoggedIn") var adminLoggedIn: Bool?
     @AppStorage("userLoggedIn") var userLoggedIn: Bool?
     
+    @ObservedObject var loginCredentials: LoginCredentials
+    @State private var loginResponseModel = LoginResponseModel()
+    @State private var errorMessage = String()
     @State private var registrationButtonPressed = false
+    @State private var showAlert = false
     
     // body
     var body: some View {
@@ -25,7 +29,40 @@ struct LoginRegisterButtonView: View {
                 // button
                 Button {
                     // login action
-                    //adminLoggedIn = true or userLoggedIn = true
+                    Networking.loginRequest(url: URL.loginURL, expecting: LoginResponseModel.self, email: self.loginCredentials.email, password: self.loginCredentials.password) { result in
+                        
+                        do {
+                            try self.loginResponseModel = result.get()
+                            
+                            DispatchQueue.main.async {
+                                
+                                if self.loginResponseModel.status! >= 200 && self.loginResponseModel.status! <= 299 {
+                                    // check if admin
+                                    if self.loginResponseModel.data?.admin ?? false {
+                                        
+                                        UserDefaults.standard.set(self.loginCredentials.email, forKey: "email")
+                                        UserDefaults.standard.set(self.loginResponseModel.data?.token, forKey: "token")
+                                        
+                                        self.adminLoggedIn = true
+                                    }
+                                    else {
+                                        
+                                        UserDefaults.standard.set(self.loginCredentials.email, forKey: "email")
+                                        UserDefaults.standard.set(self.loginResponseModel.data?.token, forKey: "token")
+                                        
+                                        self.userLoggedIn = true
+                                    }
+                                }
+                                else {
+                                    self.errorMessage = self.loginResponseModel.message ?? ""
+                                    self.showAlert = true
+                                }
+                            }
+
+                        } catch {
+                            print(error)
+                        }
+                    }
                     
                 } label: {
                     // hstack
@@ -103,7 +140,7 @@ struct LoginRegisterButtonView: View {
 
 struct LoginRegisterButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginRegisterButtonView()
+        LoginRegisterButtonView(loginCredentials: .init())
             .previewLayout(.sizeThatFits)
     }
 }

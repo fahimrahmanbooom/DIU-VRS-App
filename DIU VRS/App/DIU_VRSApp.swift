@@ -20,9 +20,11 @@ struct DIU_VRSApp: App {
             }
             else if adminLoggedIn {
                 // admin's tab view
+                AdminTabView()
             }
             else if userLoggedIn {
                 // user's tab view
+                UserTabView()
             }
         }
     }

@@ -1,32 +1,34 @@
 //
-//  RegistrationTextView.swift
+//  CreatedVenueTextView.swift
 //  DIU VRS
 //
-//  Created by Fahim Rahman on 12/10/21.
+//  Created by Fahim Rahman on 12/11/21.
 //
 
 import SwiftUI
 
-// MARK: Registration Text View
-struct RegistrationTextView: View {
+// MARK: Create Venue Text View
+struct CreatedVenueTextViewForAdmin: View {
     var body: some View {
         // hstack
         HStack {
             // text
-            Text("Registration")
+            Text("Created Venue")
                 .foregroundColor(.customGreen)
                 .font(.system(size: 35, weight: .bold, design: .default))
-            
+
             Spacer()
         } //: hstack
-        .padding([.leading, .trailing], 10)
+        .padding()
     }
 }
 
+
+
 // MARK: - Preview
-struct RegistrationTextView_Preview: PreviewProvider {
+struct CreatedVenueTextView_Preview: PreviewProvider {
     static var previews: some View {
-        RegistrationTextView()
+        CreatedVenueTextViewForAdmin()
             .previewLayout(.sizeThatFits)
     }
 }

@@ -32,9 +32,29 @@
 		FF0F7413276348750072D292 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7412276348750072D292 /* URLs.swift */; };
 		FF0F7415276351290072D292 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7414276351290072D292 /* LoginResponseModel.swift */; };
 		FF0F74172763A4010072D292 /* RegistrationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74162763A4010072D292 /* RegistrationResponseModel.swift */; };
+		FF0F74192763D0A80072D292 /* CreateVenueResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74182763D0A80072D292 /* CreateVenueResponseModel.swift */; };
+		FF0F741B2763D1810072D292 /* CreateVenueTextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F741A2763D1810072D292 /* CreateVenueTextFieldsView.swift */; };
+		FF0F741E2763D2190072D292 /* CreateVenueCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F741D2763D2190072D292 /* CreateVenueCredentials.swift */; };
+		FF0F74202763D5ED0072D292 /* CreateVenueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F741F2763D5ED0072D292 /* CreateVenueTextView.swift */; };
+		FF0F74222763D8D60072D292 /* CreateVenueButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74212763D8D60072D292 /* CreateVenueButtonView.swift */; };
+		FF0F74242763DF930072D292 /* CreatedVenueListForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74232763DF930072D292 /* CreatedVenueListForAdmin.swift */; };
+		FF0F74262763E14B0072D292 /* CreatedVenueTextViewForAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74252763E14B0072D292 /* CreatedVenueTextViewForAdmin.swift */; };
+		FF0F74282763E3350072D292 /* GetVenueResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F74272763E3350072D292 /* GetVenueResponseModel.swift */; };
+		FF0F742A276401B50072D292 /* GetProfileResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7429276401B50072D292 /* GetProfileResponseModel.swift */; };
+		FF0F742C2764030C0072D292 /* AdminImageAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F742B2764030C0072D292 /* AdminImageAndNameView.swift */; };
+		FF0F742E276412B90072D292 /* UserImageAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F742D276412B90072D292 /* UserImageAndNameView.swift */; };
 		FF5BC96427625CE6004B1FAC /* DIU_VRSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BC96327625CE6004B1FAC /* DIU_VRSApp.swift */; };
 		FF5BC96827625CE9004B1FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC96727625CE9004B1FAC /* Assets.xcassets */; };
 		FF5BC96B27625CE9004B1FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5BC96A27625CE9004B1FAC /* Preview Assets.xcassets */; };
+		FF7525B327644DC500FDA531 /* CreatedVenueListForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525B227644DC500FDA531 /* CreatedVenueListForUser.swift */; };
+		FF7525B527644F7300FDA531 /* CreatedVenueTextViewForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525B427644F7300FDA531 /* CreatedVenueTextViewForUser.swift */; };
+		FF7525C027645A1300FDA531 /* ReserveCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525BF27645A1300FDA531 /* ReserveCalenderView.swift */; };
+		FF7525C22764637100FDA531 /* VenueId.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525C12764637100FDA531 /* VenueId.swift */; };
+		FF7525C42764668B00FDA531 /* DateValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525C32764668B00FDA531 /* DateValueModel.swift */; };
+		FF7525C627646CC100FDA531 /* GetReservationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525C527646CC100FDA531 /* GetReservationsModel.swift */; };
+		FF7525C82764753400FDA531 /* ReserveVenueButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525C72764753400FDA531 /* ReserveVenueButtonView.swift */; };
+		FF7525CA276475B500FDA531 /* ReserveVenueCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525C9276475B500FDA531 /* ReserveVenueCredentials.swift */; };
+		FF7525CC276485C400FDA531 /* ReservationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7525CB276485C400FDA531 /* ReservationResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,10 +84,30 @@
 		FF0F7412276348750072D292 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		FF0F7414276351290072D292 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		FF0F74162763A4010072D292 /* RegistrationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResponseModel.swift; sourceTree = "<group>"; };
+		FF0F74182763D0A80072D292 /* CreateVenueResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVenueResponseModel.swift; sourceTree = "<group>"; };
+		FF0F741A2763D1810072D292 /* CreateVenueTextFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVenueTextFieldsView.swift; sourceTree = "<group>"; };
+		FF0F741D2763D2190072D292 /* CreateVenueCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVenueCredentials.swift; sourceTree = "<group>"; };
+		FF0F741F2763D5ED0072D292 /* CreateVenueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVenueTextView.swift; sourceTree = "<group>"; };
+		FF0F74212763D8D60072D292 /* CreateVenueButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVenueButtonView.swift; sourceTree = "<group>"; };
+		FF0F74232763DF930072D292 /* CreatedVenueListForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedVenueListForAdmin.swift; sourceTree = "<group>"; };
+		FF0F74252763E14B0072D292 /* CreatedVenueTextViewForAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedVenueTextViewForAdmin.swift; sourceTree = "<group>"; };
+		FF0F74272763E3350072D292 /* GetVenueResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVenueResponseModel.swift; sourceTree = "<group>"; };
+		FF0F7429276401B50072D292 /* GetProfileResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileResponseModel.swift; sourceTree = "<group>"; };
+		FF0F742B2764030C0072D292 /* AdminImageAndNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminImageAndNameView.swift; sourceTree = "<group>"; };
+		FF0F742D276412B90072D292 /* UserImageAndNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageAndNameView.swift; sourceTree = "<group>"; };
 		FF5BC96027625CE6004B1FAC /* DIU VRS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIU VRS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5BC96327625CE6004B1FAC /* DIU_VRSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIU_VRSApp.swift; sourceTree = "<group>"; };
 		FF5BC96727625CE9004B1FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5BC96A27625CE9004B1FAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF7525B227644DC500FDA531 /* CreatedVenueListForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedVenueListForUser.swift; sourceTree = "<group>"; };
+		FF7525B427644F7300FDA531 /* CreatedVenueTextViewForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedVenueTextViewForUser.swift; sourceTree = "<group>"; };
+		FF7525BF27645A1300FDA531 /* ReserveCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveCalenderView.swift; sourceTree = "<group>"; };
+		FF7525C12764637100FDA531 /* VenueId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueId.swift; sourceTree = "<group>"; };
+		FF7525C32764668B00FDA531 /* DateValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueModel.swift; sourceTree = "<group>"; };
+		FF7525C527646CC100FDA531 /* GetReservationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReservationsModel.swift; sourceTree = "<group>"; };
+		FF7525C72764753400FDA531 /* ReserveVenueButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVenueButtonView.swift; sourceTree = "<group>"; };
+		FF7525C9276475B500FDA531 /* ReserveVenueCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveVenueCredentials.swift; sourceTree = "<group>"; };
+		FF7525CB276485C400FDA531 /* ReservationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				FF0F73DF276323200072D292 /* AppColor.swift */,
+				FF7525C32764668B00FDA531 /* DateValueModel.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -133,6 +174,9 @@
 			children = (
 				FF0F73EC2763298D0072D292 /* LoginCredentials.swift */,
 				FF0F73F027632E280072D292 /* RegistrationCredentials.swift */,
+				FF0F741D2763D2190072D292 /* CreateVenueCredentials.swift */,
+				FF7525C9276475B500FDA531 /* ReserveVenueCredentials.swift */,
+				FF7525C12764637100FDA531 /* VenueId.swift */,
 			);
 			path = ObservableObjects;
 			sourceTree = "<group>";
@@ -158,9 +202,9 @@
 		FF0F73FB276344000072D292 /* UserTabs */ = {
 			isa = PBXGroup;
 			children = (
-				FF0F73FE276344900072D292 /* UserStatusView.swift */,
-				FF0F7400276344A90072D292 /* UserReserveView.swift */,
-				FF0F7402276344B70072D292 /* UserProfileView.swift */,
+				FF7525B62764572700FDA531 /* UserStatus */,
+				FF7525B72764573100FDA531 /* UserReserve */,
+				FF7525B82764575600FDA531 /* UserProfile */,
 			);
 			path = UserTabs;
 			sourceTree = "<group>";
@@ -168,10 +212,10 @@
 		FF0F73FC2763440C0072D292 /* AdminTabs */ = {
 			isa = PBXGroup;
 			children = (
-				FF0F7408276345210072D292 /* AdminLogView.swift */,
-				FF0F740A2763452F0072D292 /* AdminCreateVenueView.swift */,
-				FF0F740C276345430072D292 /* AdminReserveView.swift */,
-				FF0F740E276345550072D292 /* AdminProfileView.swift */,
+				FF7525BB276457AE00FDA531 /* AdminLog */,
+				FF7525BA2764578B00FDA531 /* AdminCreateVenue */,
+				FF7525BE276458F200FDA531 /* AdminReserve */,
+				FF7525B92764577600FDA531 /* AdminProfile */,
 			);
 			path = AdminTabs;
 			sourceTree = "<group>";
@@ -241,8 +285,80 @@
 			children = (
 				FF0F7414276351290072D292 /* LoginResponseModel.swift */,
 				FF0F74162763A4010072D292 /* RegistrationResponseModel.swift */,
+				FF0F74182763D0A80072D292 /* CreateVenueResponseModel.swift */,
+				FF0F74272763E3350072D292 /* GetVenueResponseModel.swift */,
+				FF0F7429276401B50072D292 /* GetProfileResponseModel.swift */,
+				FF7525C527646CC100FDA531 /* GetReservationsModel.swift */,
+				FF7525CB276485C400FDA531 /* ReservationResponseModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FF7525B62764572700FDA531 /* UserStatus */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F73FE276344900072D292 /* UserStatusView.swift */,
+			);
+			path = UserStatus;
+			sourceTree = "<group>";
+		};
+		FF7525B72764573100FDA531 /* UserReserve */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F7400276344A90072D292 /* UserReserveView.swift */,
+				FF7525B427644F7300FDA531 /* CreatedVenueTextViewForUser.swift */,
+				FF7525B227644DC500FDA531 /* CreatedVenueListForUser.swift */,
+				FF7525BF27645A1300FDA531 /* ReserveCalenderView.swift */,
+				FF7525C72764753400FDA531 /* ReserveVenueButtonView.swift */,
+			);
+			path = UserReserve;
+			sourceTree = "<group>";
+		};
+		FF7525B82764575600FDA531 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F742D276412B90072D292 /* UserImageAndNameView.swift */,
+				FF0F7402276344B70072D292 /* UserProfileView.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		FF7525B92764577600FDA531 /* AdminProfile */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F740E276345550072D292 /* AdminProfileView.swift */,
+				FF0F742B2764030C0072D292 /* AdminImageAndNameView.swift */,
+			);
+			path = AdminProfile;
+			sourceTree = "<group>";
+		};
+		FF7525BA2764578B00FDA531 /* AdminCreateVenue */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F740A2763452F0072D292 /* AdminCreateVenueView.swift */,
+				FF0F741F2763D5ED0072D292 /* CreateVenueTextView.swift */,
+				FF0F741A2763D1810072D292 /* CreateVenueTextFieldsView.swift */,
+				FF0F74212763D8D60072D292 /* CreateVenueButtonView.swift */,
+			);
+			path = AdminCreateVenue;
+			sourceTree = "<group>";
+		};
+		FF7525BB276457AE00FDA531 /* AdminLog */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F7408276345210072D292 /* AdminLogView.swift */,
+				FF0F74252763E14B0072D292 /* CreatedVenueTextViewForAdmin.swift */,
+				FF0F74232763DF930072D292 /* CreatedVenueListForAdmin.swift */,
+			);
+			path = AdminLog;
+			sourceTree = "<group>";
+		};
+		FF7525BE276458F200FDA531 /* AdminReserve */ = {
+			isa = PBXGroup;
+			children = (
+				FF0F740C276345430072D292 /* AdminReserveView.swift */,
+			);
+			path = AdminReserve;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,30 +432,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0F7415276351290072D292 /* LoginResponseModel.swift in Sources */,
+				FF7525C82764753400FDA531 /* ReserveVenueButtonView.swift in Sources */,
+				FF7525C027645A1300FDA531 /* ReserveCalenderView.swift in Sources */,
 				FF0F740B2763452F0072D292 /* AdminCreateVenueView.swift in Sources */,
 				FF0F73ED2763298D0072D292 /* LoginCredentials.swift in Sources */,
 				FF0F740F276345550072D292 /* AdminProfileView.swift in Sources */,
 				FF0F740D276345430072D292 /* AdminReserveView.swift in Sources */,
+				FF0F74202763D5ED0072D292 /* CreateVenueTextView.swift in Sources */,
+				FF7525C22764637100FDA531 /* VenueId.swift in Sources */,
 				FF0F73E8276328610072D292 /* LoginTextView.swift in Sources */,
 				FF0F73E5276328050072D292 /* LoginRegisterButtonView.swift in Sources */,
+				FF0F74262763E14B0072D292 /* CreatedVenueTextViewForAdmin.swift in Sources */,
+				FF7525C42764668B00FDA531 /* DateValueModel.swift in Sources */,
+				FF0F74242763DF930072D292 /* CreatedVenueListForAdmin.swift in Sources */,
 				FF0F7409276345210072D292 /* AdminLogView.swift in Sources */,
 				FF0F73EF27632C100072D292 /* RegistrationView.swift in Sources */,
 				FF0F73EA276329130072D292 /* LoginCredentialsView.swift in Sources */,
+				FF0F74282763E3350072D292 /* GetVenueResponseModel.swift in Sources */,
+				FF0F742E276412B90072D292 /* UserImageAndNameView.swift in Sources */,
 				FF0F7401276344A90072D292 /* UserReserveView.swift in Sources */,
+				FF7525CA276475B500FDA531 /* ReserveVenueCredentials.swift in Sources */,
 				FF0F73FF276344900072D292 /* UserStatusView.swift in Sources */,
+				FF0F741B2763D1810072D292 /* CreateVenueTextFieldsView.swift in Sources */,
+				FF0F742C2764030C0072D292 /* AdminImageAndNameView.swift in Sources */,
 				FF0F7405276344CD0072D292 /* UserTabView.swift in Sources */,
+				FF0F742A276401B50072D292 /* GetProfileResponseModel.swift in Sources */,
 				FF0F74172763A4010072D292 /* RegistrationResponseModel.swift in Sources */,
+				FF7525CC276485C400FDA531 /* ReservationResponseModel.swift in Sources */,
 				FF0F73F827633C5B0072D292 /* RegistrationButtonView.swift in Sources */,
 				FF0F73F127632E280072D292 /* RegistrationCredentials.swift in Sources */,
 				FF0F73E0276323200072D292 /* AppColor.swift in Sources */,
+				FF0F74192763D0A80072D292 /* CreateVenueResponseModel.swift in Sources */,
 				FF0F7411276348210072D292 /* API.swift in Sources */,
 				FF0F73F327632EB80072D292 /* RegistrationCredentialsView.swift in Sources */,
 				FF0F7403276344B70072D292 /* UserProfileView.swift in Sources */,
 				FF0F73F5276337320072D292 /* RegistrationTextView.swift in Sources */,
+				FF0F741E2763D2190072D292 /* CreateVenueCredentials.swift in Sources */,
+				FF7525C627646CC100FDA531 /* GetReservationsModel.swift in Sources */,
+				FF0F74222763D8D60072D292 /* CreateVenueButtonView.swift in Sources */,
 				FF0F7413276348750072D292 /* URLs.swift in Sources */,
 				FF0F73DB276322590072D292 /* LoginView.swift in Sources */,
 				FF5BC96427625CE6004B1FAC /* DIU_VRSApp.swift in Sources */,
+				FF7525B327644DC500FDA531 /* CreatedVenueListForUser.swift in Sources */,
 				FF0F74072763450D0072D292 /* AdminTabView.swift in Sources */,
+				FF7525B527644F7300FDA531 /* CreatedVenueTextViewForUser.swift in Sources */,
 				FF0F73E22763238F0072D292 /* TopLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

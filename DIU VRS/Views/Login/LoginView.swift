@@ -30,7 +30,7 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                LoginRegisterButtonView()
+                LoginRegisterButtonView(loginCredentials: loginCredentials)
                 
                 Spacer()
             } //: vstack

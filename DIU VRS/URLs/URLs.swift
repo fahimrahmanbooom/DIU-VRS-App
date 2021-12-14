@@ -42,4 +42,12 @@ extension URL {
     
     // get reservation
     static let getReservationURL = URL(string: "\(baseURLString)/api/reservations")
+    
+    // paymentURL
+    static func paymentURL(id: String) -> URL? {
+        
+        let url = URL(string: "\(baseURLString)/api/payment/\(id)")
+        
+        return url
+    }
 }

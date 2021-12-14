@@ -47,12 +47,12 @@ struct CreatedVenueListForAdmin: View {
                                 .bold()
                                 .padding(.vertical, 5)
                             
-                            // Venue Info
-                            Text("Venue Info: \(item.venueInfo ?? "")")
-                                .foregroundColor(.black)
-                                .font(.subheadline)
-                                .bold()
-                                .padding(.vertical, 5)
+//                            // Venue Info
+//                            Text("Venue Info: \(item.venueInfo ?? "")")
+//                                .foregroundColor(.black)
+//                                .font(.subheadline)
+//                                .bold()
+//                                .padding(.vertical, 5)
                             
                             // rent amount
                             Text("Rent Amount: ৳\(item.rentAmount ?? 0)")

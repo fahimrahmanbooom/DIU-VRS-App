@@ -17,7 +17,9 @@ struct AdminTabView: View {
         // tab view
         TabView {
             AdminLogView()
-                .tabItem { Label("Log", systemImage: "text.redaction") }
+                .tabItem { Label("Venues", systemImage: "list.bullet.rectangle") }
+            UserStatusView()
+                .tabItem { Label("Status", systemImage: "text.redaction") }
             AdminCreateVenueView(createVenueCredentials: .init())
                 .tabItem { Label("Create Venue", systemImage: "calendar.badge.plus") }
             AdminReserveView()

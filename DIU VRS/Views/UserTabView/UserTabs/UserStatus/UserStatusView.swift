@@ -12,9 +12,10 @@ struct UserStatusView: View {
 
     // MARK: - Properties
     @State private var reservationResponseModel = ReservationResponseModel()
+    @Environment(\.openURL) var openURL
     
     var body: some View {
-        // navigationReservationResponseModel
+        // navigation
         NavigationView {
             // scroll view
             ScrollView(.vertical, showsIndicators: false) {
@@ -94,6 +95,21 @@ struct UserStatusView: View {
                                             .font(.subheadline)
                                             .bold()
                                             .padding(.vertical, 5)
+
+                                        
+                                        // pay now button
+                                        Button {
+                                            openURL((URL(string: "https://sandbox.sslcommerz.com/gwprocess/v3/gw.php?Q=PAY&SESSIONKEY=67384298A54EC4983CBAB2B6438039F1") ?? URL(string:"https://fahimrahman.tech/"))!)
+                                        } label: {
+                                            Text("Pay Now")
+                                                .font(.caption)
+                                                .fontWeight(.semibold)
+                                                .foregroundColor(.white)
+                                                .frame(width: 60, height: 5,  alignment: .center)
+                                                .padding()
+                                        }
+                                        .background(Color.customGreen)
+                                        .cornerRadius(10)
 
                                     } //: vstack
 
